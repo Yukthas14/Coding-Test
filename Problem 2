@@ -1,0 +1,10 @@
+#Palindrome Chack
+def palindrome(word):
+    cleaned = ''.join(ch.lower() for ch in word if ch.isalnum())
+    return cleaned == cleaned[::-1]
+
+print(palindrome("A man a plan a canal Panama"))
+print(palindrome("racecar"))
+print(palindrome("Hello"))
+print(palindrome("No lemon, no melon"))
+print(palindrome(""))
