@@ -1,0 +1,54 @@
+\# Coding Assessment
+
+
+
+Name: Yuktha S
+
+Roll Number: 
+
+Programming Language: Python
+
+
+
+\#Problem 1 ( To find second largest integer)
+
+
+
+Converted the list into a set to remove duplicate values and sorted it in descending order.
+
+Returned the second element from the sorted list as the second largest number.
+
+
+
+\#Problem 2
+
+
+
+Removed spaces and special characters and converted the string to lowercase for uniform comparison.
+
+Checked whether the cleaned string is equal to its reverse to determine if it is a palindrome.
+
+
+
+\# Problem 3
+
+
+
+Split the text into words and counted the frequency of each word using a dictionary.
+
+Returned the word with the highest frequency, choosing the lexicographically smaller one in case of a tie.
+
+
+
+
+
+\## Problem 4
+
+Used nested loops to check every possible pair of elements in the array.
+
+Stored the pairs whose sum matched the target value while avoiding duplicate pairs.
+
+
+
+
+
