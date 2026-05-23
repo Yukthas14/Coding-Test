@@ -1,0 +1,14 @@
+#To find Second Largest integer
+
+def second_largest(nums):
+
+    nums = list(set(nums)) #remove duplicates using set
+    if len(nums) < 2:
+        return -1
+    nums.sort(reverse=True) #sort in descending order
+    return nums[1]
+
+print(second_largest([3, 1, 4, 1, 5, 9, 2, 6]))  
+print(second_largest([10, 10, 10]))              
+print(second_largest([5, 3]))                   
+print(second_largest([-1, -2, -3]))             
