@@ -1,0 +1,27 @@
+#Word Frequency Counter 
+def freq_word(text):
+    words = text.lower().split()
+    
+    freq = {}
+    for word in words:
+        if word in freq:
+            freq[word] += 1
+        else:
+            freq[word] = 1
+    
+    max_count = 0
+    for count in freq.values():
+        if count > max_count:
+            max_count = count
+    
+    result = None
+    for word in freq:
+        if freq[word] == max_count:
+            if result is None or word < result:
+                result = word
+    
+    return result
+
+print(freq_word("the cat and the dog and the bird"))  
+print(freq_word("apple banana apple cherry banana"))  
+print(freq_word("Hello world hello"))
